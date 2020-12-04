@@ -72,16 +72,16 @@ public class AStarAgent : MonoBehaviour
         m_velocity = Vector2.zero;
         m_state = EAgentState.Standby;
     }
-//#if UNITY_EDITOR
-//    private void OnDrawGizmos()
-//    {
-//        if (m_path != null && m_path.Count > 1)
-//        {
-//            Vector3[] array = m_path.ToArray();
-//            Gizmos.color = Color.black;
-//            for (int i = 0; i < array.Length; ++i)
-//                Gizmos.DrawCube(array[i], Vector2.one*0.5f);
-//        }
-//    }
-//#endif
+#if UNITY_EDITOR
+    private void OnDrawGizmos()
+    {
+        if (m_path != null && m_path.Count > 1)
+        {
+            Vector3[] array = m_path.ToArray();
+            Gizmos.color = Color.black;
+            for (int i = 0; i < array.Length; ++i)
+                Gizmos.DrawCube(array[i], Vector2.one * 0.5f);
+        }
+    }
+#endif
 }

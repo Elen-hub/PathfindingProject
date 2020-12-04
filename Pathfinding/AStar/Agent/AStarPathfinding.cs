@@ -14,6 +14,7 @@ public class AStarPathfinding
     {
         set { m_buildGrid = value; }
     }
+    // 노드를 추적하여 Stack에 담아 리턴 
     Stack<Vector3> GetPath(Vector3 startPos, Vector3 targetPos)
     {
         SearchPath(startPos, targetPos);
@@ -27,6 +28,7 @@ public class AStarPathfinding
         }
         return path;
     }
+    // 노드를 기반으로 선형연결리스트처럼 노드를 이어줌 
     public IEnumerator SearchPath(Vector3 startPos, Vector3 endPos)
     {
         yield return null;

@@ -15,6 +15,7 @@ public class MapUI_Minimap : MonoBehaviour
         m_fogBuffer = transform.Find("Mask").Find("MinimapBuffer").GetComponent<RawImage>();
         m_mapImg = transform.Find("Mask").Find("Minimap").GetComponent<Image>();
         transform.Find("SizeBTN").GetComponent<Button>().onClick.AddListener(OnMapButton);
+
         m_fogBuffer.material.SetFloat("_rectSize", m_maskImg.rectTransform.rect.width);
         m_fogBuffer.material.SetFloat("_textureSize", m_fogBuffer.rectTransform.rect.width);
         return this;

@@ -81,8 +81,8 @@ Material:
     - _UVSec: 0
     - _ZWrite: 1
     - _pos: 0
-    - _posX: -0.13281249
-    - _posY: -0.42808127
+    - _posX: -0.15332027
+    - _posY: -0.39654675
     - _rectSize: 256
     - _textureSize: 512
     m_Colors:
